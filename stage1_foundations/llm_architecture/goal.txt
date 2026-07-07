@@ -1,0 +1,25 @@
+So far, we have understood:
+- Tokenization
+- Input embeddings 
+- Attention mechanism
+- Context vector
+and many other thing, 
+
+In this chapter we will implement all of these concept, understand the LLM architecture and the main goal will
+to Implement a GPT Model from scratch to generate text.
+
+The configuration we'll using :
+
+
+GPT_CONFIG_124M = {
+    "vocab_size": 50257,    # Vocabulary size
+    "context_length": 1024, # Context length
+    "emb_dim": 768,         # Embedding dimension
+    "n_heads": 12,          # Number of attention heads
+    "n_layers": 12,         # Number of layers
+    "drop_rate": 0.1,       # Dropout rate
+    "qkv_bias": False       # Query-Key-Value bias
+}
+
+
+We will start by making a Dummy GPT Model class in Part 1.
