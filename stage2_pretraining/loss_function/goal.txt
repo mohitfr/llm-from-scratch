@@ -1,0 +1,19 @@
+Our goal for This section is to find the loss function for the Output predicted by the Model 
+we created in the previous modules.
+
+The model is yet to be trained so loss will be pretty high.
+
+The following is the model configuration for this section:
+
+GPT_CONFIG_124M = {
+    "vocab_size": 50257,   # Vocabulary size
+    "context_length": 256, # Shortened context length (orig: 1024)
+    "emb_dim": 768,        # Embedding dimension
+    "n_heads": 12,         # Number of attention heads
+    "n_layers": 12,        # Number of layers
+    "drop_rate": 0.1,      # Dropout rate
+    "qkv_bias": False      # Query-key-value bias
+}
+
+We will step by step implement the loss function also Known as the Cross Entropy Loss or
+Negative Average Log Probability, another name is Negative Log Likelihood.
