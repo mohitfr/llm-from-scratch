@@ -17,3 +17,7 @@ GPT_CONFIG_124M = {
 
 We will step by step implement the loss function also Known as the Cross Entropy Loss or
 Negative Average Log Probability, another name is Negative Log Likelihood.
+
+- 1. loss_calculation - define the Loss function
+- 2. training_and_validation_loss - We apply the loss to an entire dataset which we split into training
+and validation portions.
