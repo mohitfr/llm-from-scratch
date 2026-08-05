@@ -18,8 +18,28 @@ GPT_CONFIG_124M = {
 We will step by step implement the loss function also Known as the Cross Entropy Loss or
 Negative Average Log Probability, another name is Negative Log Likelihood.
 
+    Training tokens: 4608
+    Validation tokens: 512
+    Ratio of training set: 0.9
+    All tokens: 5120
+
 - 1. loss_calculation - define the Loss function
 - 2. training_and_validation_loss - We apply the loss to an entire dataset which we split 
-     into training and validation portions.
+     into training and validation portions. (Batch size = 2)
     - Results -- Training loss: 10.979451815287272
                  Validation loss: 10.988801002502441
+
+---------------------------------------------------------------------------------------------------------------
+
+I also calculated the losses for bigger data(Harry potter book) with our original context length i.e. 1024
+and Batch size = 4
+
+    Training tokens: 90112
+    Validation tokens: 22528
+    Ratio of training set: 0.8
+    All tokens: 112640
+
+    - Results -- Training loss: 10.979750069704922
+                 Validation loss: 10.981977462768555
+
+In the next section, we will look into the pre-training loop in which we will minimize these losses.
