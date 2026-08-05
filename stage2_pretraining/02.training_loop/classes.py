@@ -4,7 +4,7 @@ from torch.utils.data import Dataset, DataLoader
 import tiktoken
 
 
-# Everything below is from stage 1, but we will be using it in stage 2 as well.
+# Everything below is from stage 1 and previous sections of stage 2 as well
 
 
 class GPTDatasetV1(Dataset):
