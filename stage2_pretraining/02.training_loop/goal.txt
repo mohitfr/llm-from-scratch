@@ -20,3 +20,11 @@ above configuration.
 
 We will use the functions and classes we defined in the previous sections, all of them are present in classes.py 
 in this chapter folder.
+
+
+import torch
+print(torch.cuda.is_available())
+
+print(torch.cuda.get_device_name(torch.cuda.current_device()))
+print(torch.cuda.device_count())
+print(round(torch.cuda.get_device_properties(torch.cuda.current_device()).total_memory / (1024 ** 3), 2), "GB")
